@@ -1,2 +1,2 @@
-echo "Timestamp: `date`" >> speedLog.txt
-speedtest-cli >> speedLog.txt
+echo "{ \"SSID\": \"`iwgetid -r`\" }" >> speedLog.txt
+speedtest-cli --json >> speedLog.txt
